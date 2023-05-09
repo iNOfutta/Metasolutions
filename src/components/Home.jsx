@@ -1,10 +1,15 @@
+import { Link } from "react-router-dom"
 import Card from "./Card"
 
 export default function Home(){
     return(
         <>  
-            <p className="text-center text-2xl p-20">Bem-vindo a Metasolutions, este sistema feito para pessoas de todas as faixas etárias poderem realizar seus projectos e sonhos pelo apoio que a nossa plataforma oferece. Foi feito para você!</p>
+            <p className="text-center text-2xl p-10">Bem-vindo a Metasolutions, este sistema feito para pessoas de todas as faixas etárias poderem realizar seus projectos e sonhos pelo apoio que a nossa plataforma oferece. Foi feito para você!</p>
             
+                <Link to="/register"><div className="w-full h-32 flex flex-col justify-center items-center  space-y-4">
+                <p>Tem um projecto em mente?</p>
+                <button type="button" className="focus:outline-none text-white bg-secondary hover:bg-primary focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 -mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 w-1/6">Cadastre-se</button>
+                </div></Link>
 
             <div className="p-3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5">
                     <Card pic="https://mlv2av5beeba.i.optimole.com/cb:mn9SHGcX.lAuvkaMT/w:auto/id:eaecd995688cda1e7216e923febcc8b3/directUpload/VFGT.jpg" title="Kids" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil."/>
@@ -21,6 +26,10 @@ export default function Home(){
                     <Card pic="https://mlv2av5beeba.i.optimole.com/cb:mGmWa2D5.lJ13BXcF/w:auto/id:f577c0cf6cee3c52c1db57f1a939e7df/directUpload/ERD.jpg" title="CRESCIMENTO ECONÔMICO" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil."/>
                     <Card pic="https://mlv2av5beeba.i.optimole.com/cb:mLwGUsN8.lZYW3mYN/w:auto/id:80aa5d62c8dae114994345472fa59f6a/directUpload/vbhy.jpg" title="CRESCIMENTO CULTURAL" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil."/>
             </div>
+            <Link to="/register"><div className="w-full h-32 flex flex-col justify-center items-center  space-y-4">
+                <p>Tem um projecto em mente?</p>
+                <button type="button" className="focus:outline-none text-white bg-secondary hover:bg-primary focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 -mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 w-1/6">Cadastre-se</button>
+                </div></Link>
         </>
     )
 }

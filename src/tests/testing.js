@@ -1,10 +1,7 @@
-function tester(logoURL, navs){
-    let links = navs.map(link=>{
-            return `<li><a href=${link.path} key=${link.id}>${link['text']}</a></li>`;
-        })
+let arr = [{path:"/home", text:"darius", id: 1}, {path:"/home", text:"futta", id:2}, {path:"/yo", text:"darius", id:3}];
 
-        return `<nav>${links}</nav>`;
-    
-}
+let arra = arr.filter(p=>{
+    p.path === '/home';
+})
 
-console.log(tester("", [{path:"/home", text:"Home", id: 1}, {path:"/about", text:"About us", id:2}, ]));
+console.log(arra);
